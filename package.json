@@ -1,0 +1,36 @@
+{
+  "name": "rootwallet",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "RootWallet — Telegram Mini App crypto wallet prototype",
+  "scripts": {
+    "dev": "vite",
+    "dev:tunnel": "node scripts/dev-telegram.mjs",
+    "dev:tunnel:external": "node scripts/dev-telegram.mjs --no-server",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.1.0",
+    "@fontsource-variable/jetbrains-mono": "^5.1.0",
+    "@noble/hashes": "^1.5.0",
+    "@scure/bip39": "^1.4.0",
+    "lucide-react": "^0.468.0",
+    "qrcode.react": "^4.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11"
+  }
+}
